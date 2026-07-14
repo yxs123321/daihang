@@ -1,1 +1,25 @@
-
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "daihang",
+    "main": "worker/index.ts",
+    "compatibility_date": "2025-04-05",
+    "assets": {
+        "not_found_handling": "single-page-application"
+    },
+    "observability": {
+        "enabled": true
+    },
+    "d1_databases": [
+        {
+            "binding": "DB",
+            "database_name": "navigation-db",
+            "database_id": "先随便填个占位，稍后替换"
+        }
+    ],
+    "vars": {
+        "AUTH_ENABLED": "true",
+        "AUTH_USERNAME": "admin",
+        "AUTH_PASSWORD": "设置一个你自己的密码",
+        "AUTH_SECRET": "随便一串随机字符串"
+    }
+}
